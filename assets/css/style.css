@@ -7,6 +7,7 @@
  */
 
 html {
+	font-size: 100%;
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -18,6 +19,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #f5f6f6;
 }
 
 /* HTML5 display definitions
@@ -469,4 +471,111 @@ th {
     font-weight: 300;
     font-style: normal;
 
+}
+
+.wrapper {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+	width: 70rem;
+  padding: 1.25rem;
+	margin-right: auto;
+	margin-left: auto;
+  background-color: #fff;
+}
+
+/*.mainTweet {background-color: #fff;}*/
+
+.mainTweet-title {
+	margin-top: 0;
+	margin-bottom: 0;
+	font: 600 .875rem/normal 'Open Sans', sans-serif;
+}
+
+.mainTweet-title a {
+	text-decoration: none;
+	color: #52575E;
+}
+
+.mainTweet-title a::before {
+  content: url('../img/profile-main-tweet.png');
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .625rem;
+}
+
+.mainTweet-title a:hover,
+.mainTweet-title a:focus {
+	text-decoration: underline;
+}
+
+.mainTweet-postDate {
+	float: right;
+	font: 300 .75rem/normal 'Open Sans', sans-serif;
+}
+
+.mainTweet-postDate a {
+	text-decoration: none;
+	color: #989CA3;
+}
+
+.mainTweet-postDate a:hover,
+.mainTweet-postDate a:focus {
+	text-decoration: underline;
+}
+
+.mainTweet-content {font: 400 .875rem/normal 'Open Sans', sans-serif;}
+
+.mainTweet-link {
+	text-decoration: none;
+	color: #5CB0E6;
+}
+
+.mainTweet-link:hover,
+.mainTweet-link:focus {
+	text-decoration: underline;
+}
+
+.mainTweet-mention {
+	font: 300 .875rem/normal 'Open Sans', sans-serif;
+	color: #989CA3;
+}
+
+.mainTweet-mention::before {
+  content: url('../img/twitter.png');
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .625rem;
+}
+
+.mainTweet-mentionLink {
+	color: #52575E;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.mainTweet-mentionLink:hover,
+.mainTweet-mentionLink:focus {
+	text-decoration: underline;
+}
+
+.listActions,
+.listActionsSub {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font: 300 .875rem/normal 'Open Sans', sans-serif;
+}
+
+.listActions-link {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+}
+
+.listActionsSub-link {text-decoration: none;}
+
+.listActionsSub-link:hover,
+.listActionsSub-link:focus {
+	text-decoration: underline;
 }
