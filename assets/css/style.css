@@ -484,9 +484,10 @@ th {
   background-color: #fff;
 }
 
-/*.mainTweet {background-color: #fff;}*/
+.mainTweet {overflow: hidden;}
 
 .mainTweet-title {
+  float: left;
 	margin-top: 0;
 	margin-bottom: 0;
 	font: 600 .875rem/normal 'Open Sans', sans-serif;
@@ -524,7 +525,10 @@ th {
 	text-decoration: underline;
 }
 
-.mainTweet-content {font: 400 .875rem/normal 'Open Sans', sans-serif;}
+.mainTweet-content {
+  font: 400 .875rem/normal 'Open Sans', sans-serif;
+  clear: both;
+}
 
 .mainTweet-link {
 	text-decoration: none;
@@ -537,6 +541,7 @@ th {
 }
 
 .mainTweet-mention {
+  float: left;
 	font: 300 .875rem/normal 'Open Sans', sans-serif;
 	color: #989CA3;
 }
@@ -559,15 +564,35 @@ th {
 	text-decoration: underline;
 }
 
-.listActions,
+.listActions {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font: 300 .875rem/normal 'Open Sans', sans-serif;
+}
+
 .listActionsSub {
+  position: absolute;
+  left: -999rem;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	font: 300 .875rem/normal 'Open Sans', sans-serif;
 }
 
-.listActions-link {
+.listActionsSub--show {left: auto;}
+
+.listActions-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.listActions-item--last {vertical-align: baseline;}
+
+.listActions-link {display: block;}
+
+.listActions-link:not(.listActions-link--more) {
 	font: 0/0 a;
 	color: transparent;
 	text-shadow: none;
@@ -578,4 +603,27 @@ th {
 .listActionsSub-link:hover,
 .listActionsSub-link:focus {
 	text-decoration: underline;
+}
+
+.listActions-link--showComment {
+  position: relative;
+  width: 2.938rem;
+  height: 1.5rem;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+}
+
+.listActions-link--showComment img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.listActions-link--more {
+  font-size: 3rem;
+  color: #989CA3;
+  text-decoration: none;
 }
