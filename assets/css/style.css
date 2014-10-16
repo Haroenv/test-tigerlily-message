@@ -516,6 +516,7 @@ th {
   margin-bottom: .313rem;
   padding: 1.25rem;
   background-color: #fff;
+  border-radius: 2px;
   box-shadow: 1px 1px 3px #989CA3;
 }
 
@@ -687,6 +688,7 @@ th {
   overflow: hidden;
   max-height: 0;
   background-color: #fff;
+  border-radius: 2px;
   box-shadow: 1px 1px 3px #989CA3;
   -webkit-transition: max-height .8s; 
           transition: max-height .8s;
