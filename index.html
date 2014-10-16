@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 	<meta charset="UTF-8">
-	<title>Twitter feed</title>
+	<title>Tigerlily message</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -13,37 +13,41 @@
 			<p class="mainTweet-content cf"><a class="mainTweet-link" href="">@FixedBikeShop_s</a> Inside the obscure government report that balsts Obama for illegal NSA spying <a class="mainTweet-link" href="http://t.co/iOBNesFf39">http://t.co/iOBNesFf39</a> <a class="mainTweet-link" href="">#TheVerge</a></p>
 			<p class="mainTweet-mention">Mention à <a class="mainTweet-mentionLink" href="">FixedBikeShop Stagin</a></p>
 			<ul class="listActions">
-				<li class="listActions-item"><a class="listActions-link" href="" title="Report this tweet"><img src="assets/img/report.png" alt="Report this tweet." width="18" height="17">Report</a></li>
-				<li class="listActions-item"><a class="listActions-link listActions-link--showComment" href="" title="Show comments"><img src="assets/img/show-comment.png" alt="show comments">show comments</a></li>
-				<li class="listActions-item listActions-item--last"><a class="listActions-link listActions-link--more" href="">...</a>
+				<li class="listActions-item"><a class="listActions-link" href="" title="Report this tweet"><img src="assets/img/report.png" alt="Report this tweet." width="18" height="17"></a></li>
+				<li class="listActions-item"><a class="listActions-link listActions-link--showComment" href="" title="Show comments"><img src="assets/img/show-comment.png" alt="show comments">2</a></li>
+				<li class="listActions-item listActions-item--last"><a class="listActions-link listActions-link--more" href="" title="More actions">...</a>
 					<ul class="listActionsSub">
 						<li class="listActionsSub-item"><a class="listActionsSub-link" href="">Insert tweet</a></li>
 						<li class="listActionsSub-item"><a class="listActionsSub-link" href="">Hide tweet</a></li>
-					</ul>
+					</ul><!-- end.listActionsSub -->
 				</li>
-			</ul>
-		</article>
+			</ul><!-- end.listActions -->
+		</article><!-- end.mainTweet -->
 		<section class="answers">
-			<article class="answerTweet">
+			<article class="answerTweet" tabindex="0">
 				<time class="answerTweet-postDate"><a href="">17m</a></time>
 				<h2 class="answerTweet-title"><a href="#">Fashion Lin</a></h2>
 				<p class="answerTweet-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</article>
-			<article class="answerTweet">
+			</article><!-- end.answerTweet -->
+			<article class="answerTweet" tabindex="0">
 				<time class="answerTweet-postDate"><a href="">0s</a></time>
 				<h2 class="answerTweet-title"><a href="#">Michelle</a></h2>
 				<p class="answerTweet-content">Illegal and unconstitutional: that's what a sudden, blistering report from an obscure government committee has called the NSA's phone-record database.</p>
-			</article>
-		</section>
-		<form class="addComment" action="#" method="post">
-			<p>
-				<input class="addComment-inputComment" type="text" name="send_tweet" placeholder="Ajouter un commentaire...">
+			</article><!-- end.answerTweet -->
+			<form class="addComment" action="#" method="post">
+			<p class="addComment-inputWrapper addComment-inputWrapper--first">
+				<input class="addComment-inputComment" type="text" name="send_tweet" placeholder="Ajouter un commentaire..." required>
 			</p>
-			<p>
+			<p class="addComment-inputWrapper addComment-inputWrapper--last">
 				<input class="addComment-submitComment" type="submit" name="send_tweet_answer" value="Commenter">
 			</p>
-		</form>
+		</form><!-- end.addComment -->
+		</section><!-- end.answers -->
 	</div><!-- end.wrapper -->
 	<script src="assets/js/main.js"></script>
+	<!--[if lte IE 9]>
+        <script src="assets/js/classList.min.js"></script>
+        <script src="assets/js/simple.js"></script>
+   <![endif]-->
 </body>
 </html>
